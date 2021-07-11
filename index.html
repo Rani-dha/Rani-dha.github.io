@@ -11,7 +11,24 @@
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600;1,700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600;1,700&display=swap" rel="stylesheet">  
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script >$("#example").typer({
+      strings: [
+      "I'm a Model",
+      "I'm a Designer",
+      "I'm a Photographer"
+      ],
+      typeSpeed: 200,
+      backspaceSpeed: 20,
+      backspaceDelay: 800,
+      repeatDelay: 1000,
+      repeat: true,
+      autoStart: true,
+      startDelay: 100,
+      });
+      </script>
+       
   </head>
 
 <body>
@@ -33,7 +50,38 @@
         </div>
     </nav>
 </div>
+<!-- <div style="margin-top: 100px; color: skyblue;"> </div> -->
 
+<div class="header-area">
+<h2 class="text-center">I'm a <span class="animate"></span></h2>
+</div> 
+<!-- 
+<script src="snake.js"></script> -->
+
+
+<script>
+
+  var typed = new Typed('.animate',{
+    strings: [
+      " Software Engineer",
+      "  Web developer", 
+      "  Chief Designer SJC."      
+    ],
+    typeSpeed:50,
+    backSpeed: 50,
+    loop:true
+  })
+</script>
+
+<!-- <div class="box">
+    <h2>
+Laura Thorn</h2>
+<h1 id="example">
+</h1>
+</div> -->
+
+
+<!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/1lvotGQwhzi6O0gQtV" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/computer-after-effects-pre-rendered-1lvotGQwhzi6O0gQtV">via GIPHY</a></p> -->
         <!-- Include every Bootstrap JavaScript plugin and dependency with one of our two bundles.
      Both bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
