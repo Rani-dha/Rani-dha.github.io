@@ -3,10 +3,12 @@
 }
 .navbrand{
   font-family: 'Josefin Slab', serif;
+  font-size: 100%;
 }
 #toogleMobileMenu a:hover {
   text-decoration: none;
   color: white;
+  /* padding: 9%; */
   border-radius: 25px;
   border: 2px solid white; 
 }
@@ -30,7 +32,8 @@ body{
 
 .header-area h2{
   position: absolute;
-  top: 50%;
+  /* background-image: url(https://i.pinimg.com/originals/a9/a8/3e/a9a83efe190ed9660b27be8047b94edd.jpg); */
+  top: 65%;
   left: 50%;
   /* display: block;
   float: center; */
@@ -45,6 +48,14 @@ body{
    text-shadow: 0 2px 5px rgba(0,0,0,.5);
 }
 
+@media (min-width: 768px) { 
+  .header-area h2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+ }
+}
+
 .header-area h2 span{
-  color:#08a559; /* forestgreen; #17ad65; */
+  color: #08a559 ; /* forestgreen; #17ad65; */
 }
