@@ -1,14 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+    <title>DHARANI T</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600;1,700&display=swap" rel="stylesheet">    
+  </head>
+
+<body>
+  <div>
+    <nav style="background-color: #17ad65; color:white;" class="navbar navbar-expand-md navbar-dark">
+        <a href="#" id="rani" class="navbar-brand" style="margin-left: 3%;color: whitesmoke;"><i class="fal fa-code"></i>  DHARANI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toogleMobileMenu" aria-controls="toogleMobileMenu" aria-expanded="false" aria-label="Toogle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse  navbar-collapse" id="toogleMobileMenu">
+            <ul class="navbar-nav ms-auto text-center" style="margin-right: 3%;">
+                <li>
+                    <a class="nav-link active" href='#'> Home </a>
+                </li>
+                <li>
+                    <a class="nav-link" href='customer.php'> Customers </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+        <!-- Include every Bootstrap JavaScript plugin and dependency with one of our two bundles.
+     Both bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<!--  partial:index.partial.html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+
+<div class="menu">
+  <input type="checkbox" id="toggle" />
+  <label id="show-menu" for="toggle">
+    <div class="btn">
+      <i class="material-icons md-36 toggleBtn menuBtn">menu</i>
+      <i class="material-icons md-36 toggleBtn closeBtn">close</i>
+    </div>
+    <div class="btn">
+      <i class="material-icons md-36">photo_camera</i>
+    </div>
+    <div class="btn">
+      <i class="material-icons md-36">photo</i>
+    </div>
+    <div class="btn">
+      <i class="material-icons md-36">music_note</i>
+    </div>
+    <div class="btn">
+      <i class="material-icons md-36">chat_bubble</i>
+    </div>
+    <div class="btn">
+      <i class="material-icons md-36">settings</i>
+    </div>
+    <div class="btn">
+      <i class="material-icons md-36">phone</i>
+    </div>
+    <div class="btn">
+      <i class="material-icons md-36">cloud</i>
+    </div>
+    <div class="btn">
+      <i class="material-icons md-36">videocam</i>
+    </div>
+  </label>
+</div>
+
+-->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
 
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
+    Required meta tags always come first -->
+<!-- <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -46,8 +131,8 @@
 
 
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="jquery/dist/jquery.slim.min.js"></script>
+     jQuery first, then Popper.js, then Bootstrap JS. -->
+<!-- <script src="jquery/dist/jquery.slim.min.js"></script>
     <script src="popper.js/dist/umd/popper.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     
@@ -57,4 +142,4 @@
 
 
 
-  
+   -->
