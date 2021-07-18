@@ -18,10 +18,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600;1,700&display=swap"
     rel="stylesheet">
 
+  <!-- Fontawesome cdn -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 
-    <!-- Option 1: Include in HTML -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
@@ -43,20 +46,20 @@
           <li>
             <a class="nav-link" href='#Posters'> POSTERS </a>
           </li>
-          <li>
+          <!-- <li>
             <a class="nav-link" href='#socialMedia'>ACTIVITIES</a>
           </li>
           <li>
           <li>
             <a class="nav-link" href='#Qualification'> QUALIFICATION </a>
-          </li>
+          </li> -->
           <li>
             <a class="nav-link" href='#Projects'> PROJECTS </a>
           </li>
-
-
-          <a class="nav-link" href='#contact'> CONTACT </a>
-          </li>
+<!-- 
+          <li>
+            <a class="nav-link" href='#contact'> CONTACT </a>
+          </li> -->
 
         </ul>
       </div>
@@ -64,35 +67,36 @@
   </div>
   <!-- <div style="margin-top: 100px; color: skyblue;"> </div> -->
 
-  <div class="header-area text-center">
-    <h5>Hello, my name is</h5>
-    <h4>Dharani T (Btech IT 3rd year)</h4>
-    <h2 class="text-center">I'm a <span class="animate"></span></h2>
-  </div>
-  <!-- 
-<script src="snake.js"></script> -->
-
-  <script>
-
-    var typed = new Typed('.animate', {
-      strings: [
-        " Software Engineer",
-        "  Web developer",
-        "  Chief Designer SJC."
-      ],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true
-    })
-  </script>
 
   <!-- About  -->
   <div class="container" id="About">
     <div class="row">
-      <h4 class="text-uppercase"> About</h4>
-      <div class="about" style="height:100px">
-
+      <h4 class="text-uppercase" style="margin-top: 100px !important" ;> About</h4>
+      <div class="header-area text-center">
+        <h5>Hello, my name is</h5>
+        <h4>Dharani T (Btech IT 3rd year)</h4>
+        <h2 class="text-center">I'm a <span class="animate"></span></h2>
       </div>
+      <!-- 
+    <script src="snake.js"></script> -->
+
+      <script>
+
+        var typed = new Typed('.animate', {
+          strings: [
+            " Software Engineer",
+            "  Web developer",
+            "  Chief Designer SJC."
+          ],
+          typeSpeed: 50,
+          backSpeed: 50,
+          loop: true
+        })
+      </script>
+
+      <!-- <div class="about" style="height:100px">
+
+      </div> -->
 
     </div>
   </div>
@@ -259,21 +263,25 @@
   <!-- end of posters -->
 
   <!-- Projects -->
-  <div class="container" style="margin-top: 10%;">
+  <div class="container" id="Projects" style="margin-top: 10%;">
     <!--             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-3 g-lg-3"> -->
     <h4 class="text-uppercase">Projects</h4>
-    <div class="row row-cols-1 row-cols-md-2 g-3 text-center " >
-     
-      <div class= "col shadow p-3 mb-3 bg-body rounded" style="margin-right:2%; width: 50%;" >
+    <div class="row row-cols-1 row-cols-md-2 g-3 text-center ">
+
+      <div class="col shadow p-3 mb-3 bg-body rounded" style="margin-right:2%; width: 50%;">
         <div class="p-3">
           <div class="card ">
             <img src="./images/screen size intern website.PNG" style="height: 150%;" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Basic Banking System</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">
+                A Basic Banking system developed during an Internship @ The Spark Foundation
+              </p>
 
-              <a href="#" class="btn "> <i class="bi bi-github"></i>Go somewhere</a>
+              <a target="_blank" href="https://github.com/Rani-dha/Spark-foundation-Intern" class="btn"><i
+                  class="fab fa-2x fa-color fa-github"></i></a>
+              <a target="_blank" href="https://intern-sparkbank.herokuapp.com/" class="btn $gray-400"><i
+                  class="fas fa-2x fa-color fa-globe-americas"></i></a>
             </div>
           </div>
         </div>
@@ -285,14 +293,23 @@
             <img src="./images/screen size Restaurant-Website.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Restaurant Website</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">
+                Developed a Restaurant Website, while learning "HTML/CSS & JS for web developers" course offered by
+                Coursera.
+
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <a target="_blank" href="https://github.com/Rani-dha/Projects/tree/master/Restaurant%20Website"
+                class="btn"><i class="fab fa-2x fa-color fa-github"></i></a>
+              <a target="_blank" href="https://rani-dha.github.io/Projects/Restaurant%20Website/" class="btn"><i
+                  class="fas fa-2x fa-color fa-globe-americas"></i></a>
+
+
             </div>
           </div>
         </div>
       </div>
-    
+
 
       <!-- <div class="row row-cols-2 g-3">
         <div class="col">

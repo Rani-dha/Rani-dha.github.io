@@ -75,6 +75,13 @@ body{
 }
 
 /* box shadow */
-#box {
+/* #box {
   box-shadow: inset -2px -3px 3px 0px rgba(50, 50, 50, 0.75);
+  } */
+
+
+  /* changing color while hovering for projects  */
+  .fa-color:hover{
+    color: darkgray;
+    /* color: rgb(9, 144, 255); */
   }
