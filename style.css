@@ -63,3 +63,18 @@ body{
   color: #08a559 ; /* forestgreen; #17ad65; */
 }
 
+
+/* posters active not working */
+.nav-link active{
+  color: #08a559 ; 
+}
+
+/*  posters size */
+.posters img{
+  height: 15% !important;
+}
+
+/* box shadow */
+#box {
+  box-shadow: inset -2px -3px 3px 0px rgba(50, 50, 50, 0.75);
+  }
