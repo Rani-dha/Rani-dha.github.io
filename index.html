@@ -23,9 +23,12 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 
-  <!-- Option 1: Include in HTML -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Typed js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Animate on scroll library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 
@@ -56,7 +59,7 @@
           <li>
             <a class="nav-link" href='#Projects'> PROJECTS </a>
           </li>
-<!-- 
+          <!-- 
           <li>
             <a class="nav-link" href='#contact'> CONTACT </a>
           </li> -->
@@ -101,59 +104,62 @@
     </div>
   </div>
 
-  <div style="margin-top: 100px;" class="container" id="Posters">
+  <!-- Beginning of projects -->
+  <div style="margin-top: 100px;" class="container shadow-sm p-3 mb-5 bg-body rounded" id="Posters">
     <div class="row">
       <h4 class="text-uppercase"> Posters</h4>
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-favourites-tab" data-bs-toggle="tab" data-bs-target="#nav-favourites"
-            type="button" role="tab" aria-controls="nav-favourites" aria-selected="true">Favourites</button>
-          <button class="nav-link" id="nav-recent-tab" data-bs-toggle="tab" data-bs-target="#nav-recent" type="button"
-            role="tab" aria-controls="nav-recent" aria-selected="false">Recent</button>
-          <button class="nav-link" id="nav-sjc-tab" data-bs-toggle="tab" data-bs-target="#nav-sjc" type="button"
-            role="tab" aria-controls="nav-sjc" aria-selected="false">SJC</button>
-          <button class="nav-link" id="nav-syscom-tab" data-bs-toggle="tab" data-bs-target="#nav-syscom" type="button"
-            role="tab" aria-controls="nav-syscom" aria-selected="false">Syscom</button>
+          <button class="nav-link active colorChange" id="nav-favourites-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-favourites" type="button" role="tab" aria-controls="nav-favourites"
+            aria-selected="true">Favourites</button>
+          <button class="nav-link colorChange" id="nav-recent-tab" data-bs-toggle="tab" data-bs-target="#nav-recent"
+            type="button" role="tab" aria-controls="nav-recent" aria-selected="false">Recent</button>
+          <button class="nav-link colorChange" id="nav-sjc-tab" data-bs-toggle="tab" data-bs-target="#nav-sjc"
+            type="button" role="tab" aria-controls="nav-sjc" aria-selected="false">SJC</button>
+          <button class="nav-link colorChange" id="nav-syscom-tab" data-bs-toggle="tab" data-bs-target="#nav-syscom"
+            type="button" role="tab" aria-controls="nav-syscom" aria-selected="false">Syscom</button>
         </div>
         <!-- style="color: #08a559;" -->
       </nav>
       <div class="tab-content" id="nav-tabContent posters">
         <div class="tab-pane fade show active" id="nav-favourites" role="tabpanel" aria-labelledby="nav-favourites-tab">
-          <div class="container">
+          <div class="container mt-3">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-3 g-lg-3">
-              <!-- Row columns gutters -->
-              <div class="col">
-                <div class="p-3">
+              <!-- Row columns gutters data-aos="fade-right" data-aos-duration="3000" -->
+              <div data-aos="fade-left" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
+                  <!-- Small shadow -->
                   <img src="./posters/mothers day poster.jpg" alt="Mothers day poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
-              <div class="col">
+              <div data-aos="zoom-in" data-aos-duration="750" class="col">
                 <!-- <div class="p-3 border bg-light">Row column</div> -->
-                <div class="p-3">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/gct platinum jubliee poster.jpg" alt="GCT platinum jubliee poster"
                     class="img-fluid img-thumbnail" style="padding: 5px;">
                 </div>
               </div>
 
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-right" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/christmas2020F.png" alt="christmas2020 day poster"
                     class="img-fluid img-thumbnail">
                 </div>
               </div>
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-left" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/women's day poster.jpg" alt="Womens day poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="zoom-in" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/GoMacroSJC.png" alt="Photography contest poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
 
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-right" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/FPongal21.png" alt="Pongal poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
@@ -168,17 +174,17 @@
 
         </div>
         <div class="tab-pane fade" id="nav-recent" role="tabpanel" aria-labelledby="nav-recent-tab">
-          <div class="container">
+          <div class="container mt-3">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-3 g-lg-3">
-
-              <div class="col">
-                <div class="p-3">
+              <!-- Aos -->
+              <div data-aos="fade-left" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/junrs2021.png" alt="Juniors welcome poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
 
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-right" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/yr2021.png" alt="New year 2021 poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
@@ -187,45 +193,42 @@
           </div>
         </div>
         <div class="tab-pane fade" id="nav-sjc" role="tabpanel" aria-labelledby="nav-sjc-tab">
-          <div class="container">
+          <div class="container mt-3">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-3 g-lg-3">
-
-
-
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-left" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/pongal 2020 poster.jpg" alt="Pongal poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
 
 
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="zoom-in" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/PhotoGraphyPoster20.jpg" alt="Photography day poster"
                     class="img-fluid img-thumbnail">
                 </div>
               </div>
 
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-right" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/IndependenceDay2020F.jpg" alt="Independence day poster"
                     class="img-fluid img-thumbnail">
                 </div>
               </div>
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-left" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/MAHATMA_QUIZ.png" alt="MAHATMA QUIZ poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
 
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="zoom-in" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/Gandhiposter.png" alt="Gandhi poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
 
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-right" data-aos-duration="750" class="col">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/Template.png" alt="Template for MAHATMA_QUIZ" class="img-fluid img-thumbnail">
                 </div>
               </div>
@@ -238,16 +241,16 @@
 
         <div class="tab-pane fade" id="nav-syscom" role="tabpanel" aria-labelledby="nav-syscom-tab">
 
-          <div class="container">
+          <div class="container mt-3">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-3 g-lg-3">
 
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-left" data-aos-duration="750" class="col" style="width: 50%;">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/Linkedin poster.jpg" alt="Syscom poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
-              <div class="col">
-                <div class="p-3">
+              <div data-aos="fade-right" data-aos-duration="750" class="col" style="width: 50%; ">
+                <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
                   <img src="./posters/NEW DFS.PNG" alt="Syscom poster" class="img-fluid img-thumbnail">
                 </div>
               </div>
@@ -259,23 +262,66 @@
       </div>
     </div>
   </div>
-
   <!-- end of posters -->
 
-  <!-- Projects -->
-  <div class="container" id="Projects" style="margin-top: 10%;">
-    <!--             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-3 g-lg-3"> -->
-    <h4 class="text-uppercase">Projects</h4>
-    <div class="row row-cols-1 row-cols-md-2 g-3 text-center ">
+  <!-- Beginning of Projects -->
+  <!-- Visilble in extra small and small screens -->
+  <div class="container d-block d-sm-block d-md-none shadow p-3 mb-5 bg-body rounded" id="Projects" style="margin-top: 10%;">
+    <h4 class="text-uppercase mb-4">Projects</h4>
 
-      <div class="col shadow p-3 mb-3 bg-body rounded" style="margin-right:2%; width: 50%;">
-        <div class="p-3">
+    <div class="row row-cols-1 row-cols-md-2 g-3 text-center  mb-5">
+      <div class="col " style="margin-left: 4% !important; margin-right: 4% !important; width: 92% !important;">
+        <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
           <div class="card ">
-            <img src="./images/screen size intern website.PNG" style="height: 150%;" class="card-img-top" alt="...">
+            <img src="./images/screen size intern website.PNG" style="height: 150%;" class="card-img-top" alt="intern-sparkbank">
             <div class="card-body">
               <h5 class="card-title">Basic Banking System</h5>
               <p class="card-text">
                 A Basic Banking system developed during an Internship @ The Spark Foundation
+              </p>
+              <a target="_blank" href="https://github.com/Rani-dha/Spark-foundation-Intern" class="btn"><i
+                  class="fab fa-2x fa-color fa-github"></i></a>
+              <a target="_blank" href="https://intern-sparkbank.herokuapp.com/" class="btn $gray-400"><i
+                  class="fas fa-2x fa-color fa-globe-americas"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col " style="margin-left: 4% !important; margin-right: 4% !important; width: 92% !important;">
+        <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
+          <div class="card">
+            <img src="./images/screen size Restaurant-Website.png" class="card-img-top" alt="Restaurant-Website">
+            <div class="card-body">
+              <h5 class="card-title">Restaurant Website</h5>
+              <p class="card-text">
+                Developed a Restaurant Website, while learning "HTML/CSS & JS for web developers" course offered by
+                Coursera.
+              </p>
+              <a target="_blank" href="https://github.com/Rani-dha/Projects/tree/master/Restaurant%20Website"
+                class="btn"><i class="fab fa-2x fa-color fa-github"></i></a>
+              <a target="_blank" href="https://rani-dha.github.io/Projects/Restaurant%20Website/" class="btn"><i
+                  class="fas fa-2x fa-color fa-globe-americas"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visilble in medium screen  and also in all screens greater than medium -->
+  <div class="container d-none d-sm-none  d-md-block shadow-sm p-3 mb-5 bg-body rounded" id="Projects" style="margin-top: 10%;">
+    <h4 class="text-uppercase mb-4">Projects</h4>
+    <div class="row row-cols-1 row-cols-md-2 g-3 text-center ">
+
+      <div class="col " style=" margin-left: 2%; margin-right:2%; width: 46%;">
+        <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
+          <div class="card ">
+            <img src="./images/screen size intern website.PNG" style="height: 150%;" class="card-img-top" alt="intern-sparkbank">
+            <div class="card-body">
+              <h5 class="card-title">Basic Banking System</h5>
+              <p class="card-text">
+                A Basic Banking system developed during an Internship <span>  </span> @The Spark Foundation
               </p>
 
               <a target="_blank" href="https://github.com/Rani-dha/Spark-foundation-Intern" class="btn"><i
@@ -287,56 +333,38 @@
         </div>
       </div>
 
-      <div class="col shadow p-3 mb-3 bg-body rounded" style="width: 48%;">
-        <div class="p-3">
+      <div class="col float-end " style="width: 48%; margin-top: 0%;">
+        <div class="p-3 shadow-sm p-3 mb-5 bg-body rounded">
           <div class="card">
-            <img src="./images/screen size Restaurant-Website.png" class="card-img-top" alt="...">
+            <img src="./images/screen size Restaurant-Website.png" class="card-img-top" alt="Restaurant-Website">
             <div class="card-body">
               <h5 class="card-title">Restaurant Website</h5>
               <p class="card-text">
                 Developed a Restaurant Website, while learning "HTML/CSS & JS for web developers" course offered by
                 Coursera.
-
               </p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
               <a target="_blank" href="https://github.com/Rani-dha/Projects/tree/master/Restaurant%20Website"
                 class="btn"><i class="fab fa-2x fa-color fa-github"></i></a>
               <a target="_blank" href="https://rani-dha.github.io/Projects/Restaurant%20Website/" class="btn"><i
                   class="fas fa-2x fa-color fa-globe-americas"></i></a>
-
-
             </div>
           </div>
         </div>
       </div>
 
 
-      <!-- <div class="row row-cols-2 g-3">
-        <div class="col">
-          <div class="p-3">
-            <img src="./images/screen size intern website.PNG" alt="sparkbank-herokuapp image"
-              class="img-fluid img-thumbnail intern">
-          </div>
+      <!-- Animate on scroll library -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 
-        </div>
 
-        <div class="col">
-          <div class="p-3">
-            <img src="./images/screen size Restaurant-Website.png" style="height: 100%; width: 100%;"
-              alt="Restaurant-Website" class="img-fluid img-thumbnail">
-          </div>
-        </div>
-      </div> -->
-
-    </div>
-  </div>
-
-  <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/1lvotGQwhzi6O0gQtV" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/computer-after-effects-pre-rendered-1lvotGQwhzi6O0gQtV">via GIPHY</a></p> -->
-  <!-- Include every Bootstrap JavaScript plugin and dependency with one of our two bundles.
+      <!-- Include every Bootstrap JavaScript plugin and dependency with one of our two bundles.
      Both bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 
