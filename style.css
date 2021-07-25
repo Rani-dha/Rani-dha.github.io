@@ -7,9 +7,13 @@
     font-size: 100%;
     color: #08a559 !important;
 }
-/* .container {
-    background-color: #F5F6FA  !important;
+
+/* @media (max-width: 575.98px) { 
+    .container #about{
+        margin-top: 12% !important;
+    }
 } */
+
 
 #toogleMobileMenu a:hover {
     /* text-decoration: underline; */
