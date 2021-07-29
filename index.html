@@ -34,7 +34,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0" tabindex="0">
-    
+     
     <!-- normal navbar to avoid content overlap -->
     <div>
         <nav style="background-color: #08a559; color:white;"
@@ -73,7 +73,7 @@
             class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
            
 
-            <h1 style="color: #08a559 !important;"><span id="rani" class="navbar-brand mb-0 ml-3 text-uppercase "> Dharani </span></h1>
+            <h1 style=" margin-left:2% ;color: #08a559 !important;"><span id="rani" class="navbar-brand mb-0 ml-3 text-uppercase "> Dharani </span></h1>
                 <!-- <i
                         class="fal fa-code"></i> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toogleMobileMenu"
@@ -113,6 +113,20 @@
         </nav>
     </div>
 
+    <!-- <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div> -->
+      <!--CSS Spinner-->
+   <!-- <div class="spinner-wrapper">
+    <div class="spinner"></div>
+    </div> -->
+
+    <!-- <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+     -->
+
     <!-- About -->
     <div class="container shadow-sm p-3 mb-5 bg-body rounded" id="About">
         <div class="row row-cols-1">
@@ -121,17 +135,17 @@
                 <div class="highlight mb-3">
                     <!--  -->
                     <pre style="color:#f8f8f2;background-color:#272822"><code class="language-json col-12" data-lang="json">
-  const<span style="color:#f92672"> DHARANI</span> = {
+  const<span style="color:#f92672"> Dharani </span> = {
                     <span style="color:#f92672">&#34;Pronouns&#34;</span>: [<span style="color:#e6db74">&#34; She" | "her&#34;</span>],  
-                    <span style="color:#f92672">&#34;Hometown&#34;</span>: <span style="color:#e6db74">&#34;Kangeyam, Tiruppur, India&#34;</span>
+                    <span style="color:#f92672">&#34;Hometown&#34;</span>: <span style="color:#e6db74">&#34;Kangeyam, Tiruppur, India&#34;</span>,
                     <span style="color:#f92672">&#34;College&#34;</span>: <span style="color:#e6db74">&#34;Government College of Technology(GCT)&#34;</span>,
-                    <span style="color:#f92672">&#34;Course&#34;</span>: <span style="color:#e6db74">&#34;B.Tech in Information Technology(&#39;22)&#34;</span>
-                    <span style="color:#f92672">&#34;Languages&#34;</span>: [<span style="color:#e6db74">&#34;Java&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>,<span style="color:#e6db74">&#34;JS basics&#34;</span> ],
-                    <span style="color:#f92672">&#34;OtherTechnical&#34;</span>: [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#e6db74">&#34;SQL&#34;</span>],
-                    <span style="color:#f92672">&#34;Academic&#34;</span>: [<span style="color:#e6db74">&#34;Data Structures & Algorithmns&#34;</span>, <span style="color:#e6db74">&#34;DBMS&#34;</span>, <span style="color:#e6db74">&#34;OS basics&#34;</span>]
+                    <span style="color:#f92672">&#34;Course&#34;</span>: <span style="color:#e6db74">&#34;B.Tech in Information Technology(&#39;22)&#34;</span>,
+                    <span style="color:#f92672">&#34;Languages&#34;</span>: [<span style="color:#e6db74">&#34;Java&#34;</span>,<span style="color:#e6db74">&#34;C&#34;</span>,<span style="color:#e6db74">&#34;JS basics&#34;</span>],
+                    <span style="color:#f92672">&#34;OtherTechnical&#34;</span>: [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;CSS&#34;</span>,<span style="color:#e6db74">&#34;SQL&#34;</span>],
+                    <span style="color:#f92672">&#34;Academic&#34;</span>: [<span style="color:#e6db74">&#34;Data Structures & Algorithmns&#34;</span>,<span style="color:#e6db74">&#34;DBMS&#34;</span>,<span style="color:#e6db74">&#34;OS basics&#34;</span>],
                     <span style="color:#f92672">&#34;Editor&#34;</span>: <span style="color:#e6db74">&#34;Visual Studio Code&#34;</span>,
                     <span style="color:#f92672">&#34;Frameworks&#34;</span>: <span style="color:#e6db74">&#34;Bootstrap UI basics&#34;</span>,
-                    <span style="color:#f92672">&#34;Tools&#34;</span>: [<span style="color:#e6db74">&#34;Git&#34;</span>, <span style="color:#e6db74">&#34;Photoshop&#34;</span>],
+                    <span style="color:#f92672">&#34;Tools&#34;</span>: [<span style="color:#e6db74">&#34;Git&#34;</span>,<span style="color:#e6db74">&#34;Photoshop&#34;</span>],
                     <span style="color:#f92672">&#34;Life Motto&#34;</span>: [<span style="color:#e6db74">"long long learning = 100;  
                                                                   while(1) {
                                                                     if(learning > 0){ 
@@ -139,8 +153,7 @@
                                                                       ++Knowledge;
                                                                     } }" </span>],
                     <span style="color:#f92672">&#34;Responsibility&#34;</span>: <span style="color:#e6db74">&#34;Chief Designer SJC-GCT&#34;</span>   
-                    }
-            <!--  -->
+                  }
             </code></pre>
                 </div>
             </article>
@@ -149,7 +162,7 @@
 
 
     <!-- Beginning of posters -->
-    <div style="margin-top: 100px; width: 100%;" class="container shadow-sm p-3 mb-5 bg-body rounded" id="Posters">
+    <div class="container shadow-sm p-3 mb-5 bg-body rounded" id="Posters">
         <div class="row">
             <h4 class="text-uppercase"> Designs</h4>
             <nav>
@@ -338,7 +351,7 @@
     <!-- end of posters -->
 
     <!-- Beginning of Projects -->
-    <div class="container shadow-sm p-3 mb-5 bg-body rounded" id="Projects" style="margin-top: 10%;">
+    <div class="container shadow-sm p-3 mb-5 bg-body rounded" id="Projects">
         <h4 class="text-uppercase mb-4">Projects</h4>
         <div class="row row-cols-1 row-cols-md-2 g-3 text-center ">
 
@@ -387,7 +400,7 @@
     </div>
 
      <!-- Beginning of certifications -->
-    <div class="container cert-content shadow-sm p-3 mb-5 bg-body rounded" id="Certifications" style="margin-top: 5% !important;">
+    <div class="container cert-content shadow-sm p-3 mb-5 bg-body rounded" id="Certifications">
         <div class="row">
             <h4 class="text-uppercase"> Courses and Certifications</h4>
             <div class="col" style=" margin: top 1% !important; height: 20% !important;" >
@@ -435,6 +448,19 @@
     <!-- Social Meadia -->
 
    
+
+    <!-- <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" integrity="sha512-qp27nuUylUgwBZJHsmm3W7klwuM5gke4prTvPok3X5zi50y3Mo8cgpeXegWWrdfuXyF2UdLWK/WCb5Mv7CKHcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script>
