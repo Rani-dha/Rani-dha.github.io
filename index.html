@@ -34,13 +34,14 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0" tabindex="0">
+    
+    <!-- normal navbar to avoid content overlap -->
     <div>
         <nav style="background-color: #08a559; color:white;"
-            class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <!-- <a href="#" id="rani" class="navbar-brand" style="margin-left: 5%;color: whitesmoke;"><i class="fal fa-code"></i>
-        DHARANI</a> -->
+            class="navbar navbar-expand-md navbar-dark bg-dark">
+           
 
-            <h1 style="margin-left:5%; color: #08a559 !important;"><span id="rani" class="navbar-brand mb-0 "><i
+            <h1><span id="" class="navbar-brand mb-0 "><i
                         class="fal fa-code"></i> DHARANI </span></h1>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toogleMobileMenu"
@@ -50,10 +51,42 @@
             <div class="collapse  navbar-collapse" id="toogleMobileMenu">
                 <ul class="navbar-nav ms-auto text-center" style="margin-right: 3%;">
                     <li>
-                        <a class="nav-link" href='#About'> ABOUT </a>
+                        <a class="nav-link" href='#'> ABOUT </a>
                     </li>
                     <li>
-                        <a class="nav-link" href='#Posters'> POSTERS </a>
+                        <a class="nav-link" href='#'> POSTERS </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href='#'> PROJECTS </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-uppercase" href='#'> Certifications</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Fixed navbar -->
+    <div>
+        <nav style="background-color: #08a559; color:white;"
+            class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+           
+
+            <h1 style="color: #08a559 !important;"><span id="rani" class="navbar-brand mb-0 ml-3 text-uppercase "> Dharani </span></h1>
+                <!-- <i
+                        class="fal fa-code"></i> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toogleMobileMenu"
+                aria-controls="toogleMobileMenu" aria-expanded="false" aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse  navbar-collapse" id="toogleMobileMenu">
+                <ul class="navbar-nav ms-auto text-center mr-2">
+                    <li>
+                        <a class="nav-link text-uppercase" href='#About'> About </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-uppercase" href='#Posters'> Designs </a>
                     </li>
                     <!-- <li>
             <a class="nav-link" href='#socialMedia'>ACTIVITIES</a>
@@ -65,7 +98,7 @@
 
           
                     <li>
-                        <a class="nav-link" href='#Projects'> PROJECTS </a>
+                        <a class="nav-link text-uppercase" href='#Projects'> Projects </a>
                     </li>
                     <li>
                         <a class="nav-link text-uppercase" href='#Certifications'> Certifications</a>
@@ -79,70 +112,9 @@
             </div>
         </nav>
     </div>
-    <!-- <div style="margin-top: 100px; color: skyblue;"> </div> -->
 
-
-    <!-- About  -->
-    <!-- <div class="container d-block d-sm-block d-md-none shadow-sm p-3 mb-5 bg-body rounded" id="About" style="margin-top: 22%  !important;">
-        <div class="row row-cols-1">
-            <article class="about">
-                <h2 id="who-am-i">Who am I?</h2>
-                <div class="highlight mb-3">
-                    <pre style="color:#f8f8f2;background-color:#272822"><code class="language-json col-12" data-lang="json">
- const<span style="color:#f92672"> DHARANI</span> = {
-                  <span style="color:#f92672">&#34;Pronouns&#34;</span>: [<span style="color:#e6db74">&#34; She" | "her&#34;</span>],  
-                  <span style="color:#f92672">&#34;Hometown&#34;</span>: <span style="color:#e6db74">&#34;Kangeyam, Tiruppur, India&#34;</span>
-                  <span style="color:#f92672">&#34;College&#34;</span>: <span style="color:#e6db74">&#34;Government College of Technology(GCT)&#34;</span>,
-                  <span style="color:#f92672">&#34;Course&#34;</span>: <span style="color:#e6db74">&#34;B.Tech in Information Technology(&#39;22)&#34;</span>
-                  <span style="color:#f92672">&#34;Languages&#34;</span>: [<span style="color:#e6db74">&#34;Java&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>,  <span style="color:#e6db74">&#34;JS basics&#34;</span> ],
-                  <span style="color:#f92672">&#34;OtherTechnical&#34;</span>: [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#e6db74">&#34;SQL&#34;</span>],
-                  <span style="color:#f92672">&#34;Academic&#34;</span>: [<span style="color:#e6db74">&#34;DSA&#34;</span>, <span style="color:#e6db74">&#34;DBMS&#34;</span>, <span style="color:#e6db74">&#34;OS Basics&#34;</span>]
-                  <span style="color:#f92672">&#34;Editor&#34;</span>: <span style="color:#e6db74">&#34;Visual Studio Code&#34;</span>,
-                  <span style="color:#f92672">&#34;Frameworks&#34;</span>: <span style="color:#e6db74">&#34;Bootstrap UI&#34;</span>,
-                  <span style="color:#f92672">&#34;Tools&#34;</span>: [<span style="color:#e6db74">&#34;Git&#34;</span>, <span style="color:#e6db74">&#34;Photoshop&#34;</span>],
-                  <span style="color:#f92672">&#34;Life Motto&#34;</span>: [<span style="color:#e6db74"> long long learning = 100;  
-                                                              while(1) {
-                                                                extern int Knowledge = 1;
-                                                                ++Knowledge;
-                                                              } </span>],
-                  <span style="color:#f92672">&#34;Responsibility&#34;</span>: <span style="color:#e6db74">&#34;Chief Designer SJC&#34;</span>   
-                 }
-             
-                </code></pre>
-                </div>
-            </article>
-        </div>
-    </div> -->
-    <!-- <div>
-        <article class="about">
-            <h2 id="who-am-i">Who am I?</h2>
-
-            <div class="highlight mb-3"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"> const<span style="color:#f92672"> DHARANI</span> = {
-      <span style="color:#f92672">&#34;Pronouns&#34;</span>: <span style="color:#e6db74">&#34; She" | "her&#34;</span>,  
-      <span style="color:#f92672">&#34;Hometown&#34;</span>: <span style="color:#e6db74">&#34;Kangeyam, Tiruppur, India&#34;</span>,
-      <span style="color:#f92672">&#34;Education&#34;</span>: {
-               <span style="color:#f92672">&#34;College&#34;</span>: <span style="color:#e6db74">&#34;Government College of Technology(GCT)&#34;</span>,
-                <span style="color:#f92672">&#34;Course&#34;</span>: <span style="color:#e6db74">&#34;B.Tech in Information Technology(&#39;22)&#34;</span>
-      },
-      <span style="color:#f92672">&#34;Industrial Knowledge&#34;</span>: {
-              <span style="color:#f92672">&#34;Languages&#34;</span>: [<span style="color:#e6db74">&#34;Java&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>,  <span style="color:#e6db74">&#34;JS basics&#34;</span> ],
-         <span style="color:#f92672">&#34;OtherTechnical&#34;</span>: [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#e6db74">&#34;SQL&#34;</span>],
-               <span style="color:#f92672">&#34;Academic&#34;</span>: [<span style="color:#e6db74">&#34;Data Structures & Algorithmns&#34;</span>, <span style="color:#e6db74">&#34;DBMS&#34;</span>, <span style="color:#e6db74">&#34;OS Basics&#34;</span>]
-      },
-      <span style="color:#f92672">&#34;Editor&#34;</span>: <span style="color:#e6db74">&#34;Visual Studio Code&#34;</span>,
-      <span style="color:#f92672">&#34;Frameworks&#34;</span>: <span style="color:#e6db74">&#34;Bootstrap UI&#34;</span>,
-      <span style="color:#f92672">&#34;Tools&#34;</span>: [<span style="color:#e6db74">&#34;Git&#34;</span>, <span style="color:#e6db74">&#34;Photoshop&#34;</span>],
-      <span style="color:#f92672">&#34;Life Motto&#34;</span>: [<span style="color:#e6db74"> long long learning = 100;  while(1) { extern int Knowledge = 1; ++Knowledge; } } </span>],
-      <span style="color:#f92672">&#34;Responsibility&#34;</span>: <span style="color:#e6db74">&#34;Chief Designer SJC&#34;</span>   
-     }
-   }</code></pre></div>
-        </article> 
-    </div> -->
-
-
-    <!-- Visible from medium  screens -->
-    <div class="container shadow-sm p-3 mb-5 bg-body rounded" id="About"
-        style="margin-top:10.5% !important; margin-bottom: 6% !important;">
+    <!-- About -->
+    <div class="container shadow-sm p-3 mb-5 bg-body rounded" id="About">
         <div class="row row-cols-1">
             <article class="about">
                 <h2 id="who-am-i">Who am I?</h2>
@@ -179,7 +151,7 @@
     <!-- Beginning of posters -->
     <div style="margin-top: 100px; width: 100%;" class="container shadow-sm p-3 mb-5 bg-body rounded" id="Posters">
         <div class="row">
-            <h4 class="text-uppercase"> Posters</h4>
+            <h4 class="text-uppercase"> Designs</h4>
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active colorChange table-hover" id="nav-favourites-tab" data-bs-toggle="tab"
@@ -429,7 +401,7 @@
                                 src="./images/certifications/4_html_css_js_for_web developers.png"></div>
                         <div class="swiper-slide"><img src="./images/certifications/5_interactivity with JS.png"></div>
                         <div class="swiper-slide"><img src="./images/certifications/6_Coursera_Sql.png"></div>
-                        <div class="swiper-slide"><img src="./images/certifications/7_PHP.png"></div>
+                        <!-- <div class="swiper-slide"><img src="./images/certifications/7_PHP.png"></div> -->
                     </div>
 
                     <div class="swiper-button-next"></div>
@@ -501,3 +473,63 @@
                     loop: true
                 })
             </script> -->
+
+                <!-- <div style="margin-top: 100px; color: skyblue;"> </div> -->
+
+
+    <!-- About  -->
+    <!-- <div class="container d-block d-sm-block d-md-none shadow-sm p-3 mb-5 bg-body rounded" id="About" style="margin-top: 22%  !important;">
+        <div class="row row-cols-1">
+            <article class="about">
+                <h2 id="who-am-i">Who am I?</h2>
+                <div class="highlight mb-3">
+                    <pre style="color:#f8f8f2;background-color:#272822"><code class="language-json col-12" data-lang="json">
+ const<span style="color:#f92672"> DHARANI</span> = {
+                  <span style="color:#f92672">&#34;Pronouns&#34;</span>: [<span style="color:#e6db74">&#34; She" | "her&#34;</span>],  
+                  <span style="color:#f92672">&#34;Hometown&#34;</span>: <span style="color:#e6db74">&#34;Kangeyam, Tiruppur, India&#34;</span>
+                  <span style="color:#f92672">&#34;College&#34;</span>: <span style="color:#e6db74">&#34;Government College of Technology(GCT)&#34;</span>,
+                  <span style="color:#f92672">&#34;Course&#34;</span>: <span style="color:#e6db74">&#34;B.Tech in Information Technology(&#39;22)&#34;</span>
+                  <span style="color:#f92672">&#34;Languages&#34;</span>: [<span style="color:#e6db74">&#34;Java&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>,  <span style="color:#e6db74">&#34;JS basics&#34;</span> ],
+                  <span style="color:#f92672">&#34;OtherTechnical&#34;</span>: [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#e6db74">&#34;SQL&#34;</span>],
+                  <span style="color:#f92672">&#34;Academic&#34;</span>: [<span style="color:#e6db74">&#34;DSA&#34;</span>, <span style="color:#e6db74">&#34;DBMS&#34;</span>, <span style="color:#e6db74">&#34;OS Basics&#34;</span>]
+                  <span style="color:#f92672">&#34;Editor&#34;</span>: <span style="color:#e6db74">&#34;Visual Studio Code&#34;</span>,
+                  <span style="color:#f92672">&#34;Frameworks&#34;</span>: <span style="color:#e6db74">&#34;Bootstrap UI&#34;</span>,
+                  <span style="color:#f92672">&#34;Tools&#34;</span>: [<span style="color:#e6db74">&#34;Git&#34;</span>, <span style="color:#e6db74">&#34;Photoshop&#34;</span>],
+                  <span style="color:#f92672">&#34;Life Motto&#34;</span>: [<span style="color:#e6db74"> long long learning = 100;  
+                                                              while(1) {
+                                                                extern int Knowledge = 1;
+                                                                ++Knowledge;
+                                                              } </span>],
+                  <span style="color:#f92672">&#34;Responsibility&#34;</span>: <span style="color:#e6db74">&#34;Chief Designer SJC&#34;</span>   
+                 }
+             
+                </code></pre>
+                </div>
+            </article>
+        </div>
+    </div> -->
+    <!-- <div>
+        <article class="about">
+            <h2 id="who-am-i">Who am I?</h2>
+
+            <div class="highlight mb-3"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"> const<span style="color:#f92672"> DHARANI</span> = {
+      <span style="color:#f92672">&#34;Pronouns&#34;</span>: <span style="color:#e6db74">&#34; She" | "her&#34;</span>,  
+      <span style="color:#f92672">&#34;Hometown&#34;</span>: <span style="color:#e6db74">&#34;Kangeyam, Tiruppur, India&#34;</span>,
+      <span style="color:#f92672">&#34;Education&#34;</span>: {
+               <span style="color:#f92672">&#34;College&#34;</span>: <span style="color:#e6db74">&#34;Government College of Technology(GCT)&#34;</span>,
+                <span style="color:#f92672">&#34;Course&#34;</span>: <span style="color:#e6db74">&#34;B.Tech in Information Technology(&#39;22)&#34;</span>
+      },
+      <span style="color:#f92672">&#34;Industrial Knowledge&#34;</span>: {
+              <span style="color:#f92672">&#34;Languages&#34;</span>: [<span style="color:#e6db74">&#34;Java&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>,  <span style="color:#e6db74">&#34;JS basics&#34;</span> ],
+         <span style="color:#f92672">&#34;OtherTechnical&#34;</span>: [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;CSS&#34;</span>, <span style="color:#e6db74">&#34;SQL&#34;</span>],
+               <span style="color:#f92672">&#34;Academic&#34;</span>: [<span style="color:#e6db74">&#34;Data Structures & Algorithmns&#34;</span>, <span style="color:#e6db74">&#34;DBMS&#34;</span>, <span style="color:#e6db74">&#34;OS Basics&#34;</span>]
+      },
+      <span style="color:#f92672">&#34;Editor&#34;</span>: <span style="color:#e6db74">&#34;Visual Studio Code&#34;</span>,
+      <span style="color:#f92672">&#34;Frameworks&#34;</span>: <span style="color:#e6db74">&#34;Bootstrap UI&#34;</span>,
+      <span style="color:#f92672">&#34;Tools&#34;</span>: [<span style="color:#e6db74">&#34;Git&#34;</span>, <span style="color:#e6db74">&#34;Photoshop&#34;</span>],
+      <span style="color:#f92672">&#34;Life Motto&#34;</span>: [<span style="color:#e6db74"> long long learning = 100;  while(1) { extern int Knowledge = 1; ++Knowledge; } } </span>],
+      <span style="color:#f92672">&#34;Responsibility&#34;</span>: <span style="color:#e6db74">&#34;Chief Designer SJC&#34;</span>   
+     }
+   }</code></pre></div>
+        </article> 
+    </div> -->
