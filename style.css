@@ -9,6 +9,11 @@
     color: #08a559 !important;
 }
 
+/* navbar color */
+.bg-dark{
+    background-color: #000 !important;
+}
+
 
 #who-am-i{
     padding-top: 3% !important;
