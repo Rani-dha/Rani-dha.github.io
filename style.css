@@ -101,6 +101,7 @@ body {
 .header-area h2 span,
 h2 {
     color: #08a559;
+    margin-bottom: 5% !important;
     /* forestgreen; #17ad65; */
 }
 
@@ -252,3 +253,44 @@ h2 {
         top: 48%;
         left: 48%;
     } */
+
+
+    /* Social media */
+    .socialicons {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+    }
+    .socialicons .icon{
+        width: 80px;
+        height: 80px;
+        box-shadow: 0 0 5px 10px rgba(0,0,0,0.05);
+        margin: 0 30px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 30px;
+        text-decoration: none;
+        color: #000;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+    .icon:after {
+        content: '';
+        width: 80px;
+        height: 80px;
+        z-index: -1;
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+        background: rgb(6,228,148);
+        background: linear-gradient(90deg, rgba(6,228,148,1) 0%, rgba(6,228,148,1) 0%, rgba(8,165,89,1) 100%);
+        /* background: linear-gradient(to bottom, rgb(158, 0, 231), rgb(57,1,211)); */
+        transition: 0.2s;
+    }
+    .socialicons .icon:hover, .socialicons .leetcode:hover {
+        color: #fff;
+    }
+    a:hover::after {
+        bottom: 0;
+    }
