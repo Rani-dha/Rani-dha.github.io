@@ -95,6 +95,8 @@ body {
  
 #About {
     background-color: #111 !important;
+    width: 100% !important;
+    margin-bottom: 2% !important;
     /* first background color */
 } 
 
@@ -117,7 +119,9 @@ h2 {
     color: white !important;
     background-color: #111 !important;
 }
-
+.pre {
+    width: 100% !important;
+}
 
 /* posters active*/
 
@@ -376,8 +380,8 @@ h2 {
     .socials a:hover i{
         color: white;
         background-color: #111;
-        border: solid 2px white;
-        padding: 5px;
+        border: solid 1px white;
+        padding: 3px;
     }
     
     .footer-bottom{
@@ -389,10 +393,14 @@ h2 {
     .footer-bottom p{
         font-size: 14px;
         word-spacing: 2px;
-        text-transform: capitalize;
+        /* text-transform: capitalize; */
     }
     .footer-bottom span{
         text-transform: uppercase;
         opacity: .4;
         font-weight: 200;
+    }
+
+    .red-colour {
+        color: red !important;
     }
