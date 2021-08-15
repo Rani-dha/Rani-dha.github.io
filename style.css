@@ -150,7 +150,9 @@ h2 {
 /* changing color while hovering for projects  */
 
 .fa-color:hover {
-    color: darkgray;
+    color:  rgba(8,165,89,1); 
+    /* darkgray; */
+
     /* color: rgb(9, 144, 255); */
 }
 
@@ -265,7 +267,7 @@ h2 {
 
     /* Social media */
     .socialicons {
-        display: flex;
+        /* display: flex; */
         margin-top: 100px;
         justify-content: center;
        
@@ -305,6 +307,20 @@ h2 {
         bottom: 0;
     }
 
+    .check:after {        
+            content: '';
+            width: 80px;
+            height: 80px;
+            z-index: -1;
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+            background: rgb(6,228,148);
+            background: linear-gradient(90deg, rgba(6,228,148,1) 0%, rgba(6,228,148,1) 0%, rgba(8,165,89,1) 100%);
+            /* background: linear-gradient(to bottom, rgb(158, 0, 231), rgb(57,1,211)); */
+            transition: 0.2s;
+        
+    }
 
     /* footer */
     footer{
