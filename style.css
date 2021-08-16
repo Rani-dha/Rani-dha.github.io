@@ -161,6 +161,75 @@ h2 {
 }
 
 
+/* Activities */
+.btn {
+    background-color: var(--background-color);
+    color: #222;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    --background-color: rgb(6,228,148); 
+    /* background: rgb(6,228,148); */
+    /* #E3E3E3; */
+    --border-size: 2px;
+    --accent-color: linear-gradient(90deg, rgba(6,228,148,1) 0%, rgba(6,228,148,1) 0%, rgba(8,165,89,1) 100%);
+    /* #0AF; */
+
+    /* content: '';
+    width: 80px;
+    height: 80px; */
+    /* z-index: -1;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background: rgb(6,228,148); */
+    /* background: linear-gradient(90deg, rgba(6,228,148,1) 0%, rgba(6,228,148,1) 0%, rgba(8,165,89,1) 100%); */
+    /* background: linear-gradient(to bottom, rgb(158, 0, 231), rgb(57,1,211)); */
+    transition: 0.2s;
+  }
+
+
+.btn.btn-background-circle::after {
+    text-align: center;
+    font-size: large;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+  color: black;
+  /* background-color: rgba(8,165,89,1); */
+    transform: scale(1.5);
+  }
+  
+  .btn.btn-background-circle:hover::before,
+  .btn.btn-background-circle:focus::before {
+    transform: scale(0);
+  }
+  
+  .btn.btn-background-circle {
+    z-index: 1;
+    overflow: hidden;
+    background-color: var(--accent-color);
+    transition: color 500ms ease-in-out;
+  }
+  
+  .btn.btn-background-circle:hover,
+  .btn.btn-background-circle:focus {
+    color: white;
+  }
+
+
+
+
 /* Swipper Starts */
 
 .swiper-container {
@@ -200,81 +269,21 @@ h2 {
 }
 /* Swipper ends */
 
-/* Spinner */
-/* .spinner {
-    margin: 100px auto;
-    width: 40px;
-    height: 40px;
-    position: relative;
-  }
-
-  .cube1, .cube2 {
-    background-color: #333;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
-    animation: sk-cubemove 1.8s infinite ease-in-out;
-  }
-  
-  .cube2 {
-    -webkit-animation-delay: -0.9s;
-    animation-delay: -0.9s;
-  }
-  
-  @-webkit-keyframes sk-cubemove {
-    25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
-    50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
-    75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
-    100% { -webkit-transform: rotate(-360deg) }
-  }
-  
-  @keyframes sk-cubemove {
-    25% { 
-      transform: translateX(42px) rotate(-90deg) scale(0.5);
-      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
-    } 50% { 
-      transform: translateX(42px) translateY(42px) rotate(-179deg);
-      -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
-    } 50.1% { 
-      transform: translateX(42px) translateY(42px) rotate(-180deg);
-      -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
-    } 75% { 
-      transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-      -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-    } 100% { 
-      transform: rotate(-360deg);
-      -webkit-transform: rotate(-360deg);
-    }
-  } */
-
-
-/* .spinner-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ff6347;
-    z-index: 999999;
-    }
-
-    .spinner{
-        position: absolute;
-        top: 48%;
-        left: 48%;
-    } */
-
 
     /* Social media */
+    #SocialMedia{
+       
+        /* box-shadow: 0 -5px 3px -3px white, 0 5px 3px -3px #ccc; */
+        /* box-shadow: 0.2rem 0.2rem rgba(8,165,89,1) , -0.1rem -0.1rem #ccc; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    }
+    .title{
+        padding-top: 2%;
+    }
     .socialicons {
         /* display: flex; */
         margin-top: 100px;
-        justify-content: center;
-       
+        justify-content: center;      
     }
     .socialicons .icon{
         width: 80px;
@@ -286,7 +295,7 @@ h2 {
         font-size: 30px;
         text-decoration: none;
         color: #000;
-        border-radius: 50%;
+        border-radius: 100%;
         position: relative;
         overflow: hidden;
         margin-bottom: 90px;
