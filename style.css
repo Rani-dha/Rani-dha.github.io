@@ -30,6 +30,7 @@
 /* margin bottom for all containers */
 .container {
     margin-bottom: 3% !important;
+    margin-top: 6% !important;
 }
 
 #toogleMobileMenu a {
@@ -95,7 +96,7 @@ body {
  
 #About {
     background-color: #111 !important;
-    width: 100% !important;
+    width: 101.10% !important;
     margin-bottom: 2% !important;
     /* first background color */
 } 
@@ -110,7 +111,7 @@ body {
 
 /* top  */
 .top{
- width: 102.09% !important;
+ /* width: 100%!important; */
  margin-bottom: 2%;
  box-shadow: 0 -2.3px 3px -3px rgba(8,165,89,1), 0 2.5px 3px -3px rgba(8,165,89,1);
 }
@@ -182,6 +183,12 @@ h2{
 /* Activities */
  #Posters, #activity, #Projects, #Certifications{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
+}
+#activity .club{
+    margin-left: 25% !important;
+    padding-bottom: 2%;
+    /* margin-right: 25% !important; */
+    /* text-align: center !important; */
 }
 
 /* h2:hover, h2:focus, h2::before{
@@ -348,10 +355,7 @@ h2{
 
     /* Social media */
     #SocialMedia{
-       
-        /* box-shadow: 0 -5px 3px -3px white, 0 5px 3px -3px #ccc; */
-        /* box-shadow: 0.2rem 0.2rem rgba(8,165,89,1) , -0.1rem -0.1rem #ccc; */
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1); 
     }
     .title{
         padding-top: 2%;
@@ -374,7 +378,8 @@ h2{
         border-radius: 100%;
         position: relative;
         overflow: hidden;
-        margin-bottom: 90px;
+        margin-bottom: 5%;
+        margin-top: 4% ;
     }
     .icon:after {
         content: '';
@@ -488,4 +493,12 @@ h2{
 
     .red-colour {
         color: red !important;
+    }
+    /* End of footer */
+
+    /* social icons box shadow */
+
+    .socialBox {
+        border-radius: 50%;
+        box-shadow: 0 0 50px #ccc;
     }
