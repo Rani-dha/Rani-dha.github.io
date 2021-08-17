@@ -108,11 +108,29 @@ body {
     }
 }
 
+/* top  */
+.top{
+ width: 102.09% !important;
+ margin-bottom: 2%;
+ box-shadow: 0 -2.3px 3px -3px rgba(8,165,89,1), 0 2.5px 3px -3px rgba(8,165,89,1);
+}
+
+
+/* hr */
+hr {
+    margin-bottom: 5% !important;
+    margin-top: -.5% !important;
+}
+
 .header-area h2 span,
 h2 {
     color: #08a559;
-    margin-bottom: 5% !important;
+    /* text-align: center; */
+    margin-bottom: .5% !important;
     /* forestgreen; #17ad65; */
+}
+h2{
+    margin-top: 1.5% !important;
 }
 
 #who-am-i,h3{
@@ -162,7 +180,66 @@ h2 {
 
 
 /* Activities */
-.btn {
+ #Posters, #activity, #Projects, #Certifications{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
+}
+
+/* h2:hover, h2:focus, h2::before{
+    color: #fff;
+} */
+.btn{
+    background-color: var(--background-color);
+    color: #222;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    --background-color: white; 
+    --border-size: 2px;
+    --accent-color:  rgba(6,228,148,1);
+     /*  #E3E3E3;    #0AF; */
+  }
+  .btn.btn-background-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+    /* box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc; */
+    
+    transform: scale(1.5);
+  }
+  
+  .btn.btn-background-circle:hover::before,
+  .btn.btn-background-circle:focus::before {
+    transform: scale(0);
+  }
+  
+  /* .btn.btn-background-circle {
+    z-index: 1;
+    overflow: hidden;
+    background-color: var(--accent-color);
+    transition: color 500ms ease-in-out;
+  } */
+  
+  /* .btn.btn-background-circle:hover,
+  .btn.btn-background-circle:focus, 
+  .btn.btn-background-circle h2:focus,
+  .btn.btn-background-circle h2:hover {
+    color: white;
+    background-color: #08a559;
+  } */
+  
+  
+    
+/* .btn {
     background-color: var(--background-color);
     color: #222;
     padding: .5em 1em;
@@ -174,9 +251,9 @@ h2 {
     --background-color: rgb(6,228,148); 
     /* background: rgb(6,228,148); */
     /* #E3E3E3; */
-    --border-size: 2px;
+    /* --border-size: 2px;
     --accent-color: linear-gradient(90deg, rgba(6,228,148,1) 0%, rgba(6,228,148,1) 0%, rgba(8,165,89,1) 100%);
-    /* #0AF; */
+    #0AF; */
 
     /* content: '';
     width: 80px;
@@ -188,7 +265,7 @@ h2 {
     background: rgb(6,228,148); */
     /* background: linear-gradient(90deg, rgba(6,228,148,1) 0%, rgba(6,228,148,1) 0%, rgba(8,165,89,1) 100%); */
     /* background: linear-gradient(to bottom, rgb(158, 0, 231), rgb(57,1,211)); */
-    transition: 0.2s;
+    /* transition: 0.2s;
   }
 
 
@@ -205,9 +282,9 @@ h2 {
     background-color: var(--background-color);
     border-radius: 50%;
     transition: transform 500ms ease-in-out;
-  color: black;
+  color: black; */
   /* background-color: rgba(8,165,89,1); */
-    transform: scale(1.5);
+    /* transform: scale(1.5);
   }
   
   .btn.btn-background-circle:hover::before,
@@ -226,8 +303,7 @@ h2 {
   .btn.btn-background-circle:focus {
     color: white;
   }
-
-
+  */
 
 
 /* Swipper Starts */
@@ -282,7 +358,7 @@ h2 {
     }
     .socialicons {
         /* display: flex; */
-        margin-top: 100px;
+        /* margin-top: 100px; */
         justify-content: center;      
     }
     .socialicons .icon{
