@@ -23,8 +23,9 @@
 
 /* margin bottom for all containers */
 .container {
-    margin-bottom: 3% !important;
-    margin-top: 6% !important;
+  
+    margin-bottom: 12% ;
+    margin-top: 7% ma;
 }
 
 #toogleMobileMenu a {
@@ -90,16 +91,28 @@ body {
  
 #About {
     background-color: #111 !important;
-    width: 101.30% !important;
-    margin-bottom: 2% !important;
+    width: 101.05% !important;
+    margin-bottom: 5% !important;
     /* first background color */
 } 
 
+/* small devices */
+@media (min-width: 576px) { 
+    .container {
+        margin-bottom: 50% !important;
+    }
+ }
+
+
+/* Medium devices */
 @media (min-width: 768px) {
     .header-area h2 {
         position: absolute;
         /* top: 30%; */
         left: 50%;
+    }
+    .container{
+        margin-bottom: 8% !important;
     }
 }
 
@@ -256,9 +269,6 @@ h2{
     /* footer begins */
     footer{
         position: absolute;
-        /* bottom: 0;
-        left: 0;
-        right: 0; */
         background: #111;
         height: auto;
         width: 100vw;
